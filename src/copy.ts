@@ -1,5 +1,5 @@
-export const TELEGRAM_LINK = "https://t.me/operaxsuporte_bot?start=6a67a1fce5803bc6a409d4eb";
 export const MEET_LINK = "https://meet.google.com/mck-cfgi-qpq";
+export const FINAL_CTA_LINK = "{{LINK_CTA_FINAL}}";
 
 export const copy = {
   logo: "OPERAX",
@@ -18,7 +18,7 @@ export const copy = {
   warning: "⚠️ VAGAS EXTREMAMENTE LIMITADAS!",
   closing: "REALIZE SEU DEPÓSITO NA CORRETORA E ENVIE SEU COMPROVANTE PARA NOSSA EQUIPE PARA GARANTIR UMA DAS VAGAS!",
   ctaLine: "➡️ CLIQUE ABAIXO E FALE AGORA COM NOSSA EQUIPE:",
-  url: "👉 https://t.me/operaxsuporte_bot?start=6a67a1fce5803bc6a409d4eb",
-  cta: "CLIQUE ABAIXO E FALE AGORA COM NOSSA EQUIPE",
+  url: "{{CTA_FINAL_URL}}",
+  cta: "{{CTA_FINAL}}",
   imageAlt: "Criativo Operax NEO",
 } as const;

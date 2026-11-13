@@ -1,0 +1,33 @@
+# Deploy correto na Vercel
+
+O erro anterior foi `Failed to resolve /src/main.tsx`: o commit enviado ao GitHub não continha o entrypoint `src/main.tsx` ou a Vercel estava configurada com Root Directory incorreto.
+
+## Estrutura obrigatória
+
+O projeto precisa ser enviado inteiro, com estes caminhos relativos à raiz do repositório:
+
+- `index.html`
+- `src/main.tsx`
+- `src/App.tsx`
+- `src/copy.ts`
+- `src/index.css`
+- `package.json`
+- `vite.config.ts`
+- `public/operax-neo-480.webp`
+- `public/operax-neo-960.webp`
+- `public/og-operax-neo.jpg`
+
+Na Vercel, deixe **Root Directory** como `./` (raiz do repositório). Não coloque `index.html` sozinho na raiz nem envie somente a pasta `public`.
+
+## Comandos locais
+
+```bash
+npm install
+npm run build
+```
+
+O build deve terminar com `vite build` sem erros.
+
+## CTAs desta versão
+
+O único botão no topo é a live e aponta para o Google Meet real. A live não aparece novamente dentro do card de conteúdo. O CTA final e o sticky usam `{{LINK_CTA_FINAL}}` e `{{CTA_FINAL}}`; substitua esses placeholders pelo link e pelo texto aprovados antes de publicar. Nenhum link de amostra do Telegram foi mantido.

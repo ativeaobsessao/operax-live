@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { copy, MEET_LINK, TELEGRAM_LINK } from "./copy";
+import { copy, FINAL_CTA_LINK, MEET_LINK } from "./copy";
 
 type Token = string;
 
@@ -11,12 +11,12 @@ function Accent({ text, tokens }: { text: string; tokens: Token[] }) {
   );
 }
 
-function TelegramButton({ className = "" }: { className?: string }) {
-  return <a className={`cta-button ${className}`} href={TELEGRAM_LINK} target="_blank" rel="noopener noreferrer">{copy.cta}</a>;
+function FinalCtaButton({ className = "" }: { className?: string }) {
+  return <a className={`cta-button ${className}`} href={FINAL_CTA_LINK} target="_blank" rel="noopener noreferrer">{copy.cta}</a>;
 }
 
-function MeetButton() {
-  return <a className="live-button" href={MEET_LINK} target="_blank" rel="noopener noreferrer">{copy.meet}</a>;
+function LiveButton() {
+  return <span className="cta-button hero-cta live-cta">{copy.live}</span>;
 }
 
 function App() {
@@ -59,7 +59,7 @@ function App() {
         <section className="hero-section">
           <h1>{renderAccent(copy.h1, ["OPERAX NEO"])}</h1>
           <h2>{renderAccent(copy.h2, ["300%", "OPERAX NEO"])}</h2>
-          <a ref={heroCtaRef} className="cta-button hero-cta" href={TELEGRAM_LINK} target="_blank" rel="noopener noreferrer">{copy.cta}</a>
+          <a ref={heroCtaRef} className="hero-cta-anchor" href={MEET_LINK} target="_blank" rel="noopener noreferrer"><LiveButton /></a>
         </section>
 
         <figure className="creative-frame">
@@ -68,8 +68,6 @@ function App() {
 
         {card(
           <>
-            <p className="card-lead">{copy.live}</p>
-            <MeetButton />
             <p className="card-lead">{copy.returnTitle}</p>
             <p className="body-copy">{copy.support}</p>
             <p className="body-copy">{renderAccent(copy.returnBody, ["30% A 120% em uma semana"])}</p>
@@ -99,12 +97,12 @@ function App() {
         <section className="final-card" ref={finalCardRef}>
           <p className="body-copy">{copy.closing}</p>
           <p className="final-warning">{copy.ctaLine}</p>
-          <TelegramButton />
-          <a className="support-url" href={TELEGRAM_LINK} target="_blank" rel="noopener noreferrer">{copy.url}</a>
+          <FinalCtaButton />
+          <span className="support-url">{copy.url}</span>
         </section>
       </div>
 
-      {showSticky && <div className="sticky-cta"><TelegramButton /></div>}
+      {showSticky && <div className="sticky-cta"><FinalCtaButton /></div>}
     </main>
   );
 }
