@@ -9,5 +9,7 @@ npm run build
 npm run preview
 ```
 
-Coloque os três arquivos de imagem na pasta `public/` antes do build:
-`operax-neo-480.webp`, `operax-neo-960.webp` e `og-operax-neo.jpg`.
+Coloque os dois arquivos do criativo na pasta `public/` antes do build:
+`operax-neo-480.webp` e `operax-neo-960.webp`.
+
+O preview social foi desativado: o `index.html` não contém tags Open Graph/Twitter, descrição, canonical ou imagem OG.

@@ -6,7 +6,7 @@ export const copy = {
   h1: "🚨 ATIVE AGORA A OPERAX NEO! 🚨",
   h2: "💥LUCRE ATÉ 300% A MAIS COM A OPERAX NEO!",
   live: "🟢 LIVE AO VIVO: ATIVAÇÃO NEO + SUPER PREMIAÇÃO:",
-  meet: "https://meet.google.com/mck-cfgi-qpq",
+  liveCta: "CLIQUE PARA ENTRAR NA LIVE E ATIVAR NEO + PREMIAÇÃO",
   support: "Diferente das versões anteriores, a NEO foi desenvolvida para trabalhar de forma contínua, automatizada e mais agressiva sem abrir mão da gestão de capital.",
   returnTitle: "📊 POTENCIAL DE RETORNO MUITO ACIMA DA MÉDIA",
   returnBody: "A OPERAX NEO trabalha com uma projeção de rentabilidade de 30% A 120% em uma semana, sobre TODO o seu capital já aportado!",
@@ -18,7 +18,6 @@ export const copy = {
   warning: "⚠️ VAGAS EXTREMAMENTE LIMITADAS!",
   closing: "REALIZE SEU DEPÓSITO NA CORRETORA E ENVIE SEU COMPROVANTE PARA NOSSA EQUIPE PARA GARANTIR UMA DAS VAGAS!",
   ctaLine: "➡️ CLIQUE ABAIXO E FALE AGORA COM NOSSA EQUIPE:",
-  url: "👉 https://t.me/operaxsuporte_bot?start=6a67a1fce5803bc6a409d4eb",
   cta: "CLIQUE ABAIXO E FALE AGORA COM NOSSA EQUIPE",
   imageAlt: "Criativo Operax NEO",
 } as const;

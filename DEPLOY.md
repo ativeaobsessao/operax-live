@@ -30,4 +30,4 @@ O build deve terminar com `vite build` sem erros. A Vercel deste projeto exige N
 
 ## CTAs desta versão
 
-O único botão no topo é a live e exibe o texto seguido do link real do Google Meet. A live não aparece novamente dentro do card de conteúdo. O CTA final e o sticky apontam para o Telegram informado pelo usuário.
+O título da live fica acima do único botão do topo. O botão usa a frase de CTA aprovada e mantém o link do Google Meet somente no `href`, sem URL aparente no front-end. A live não aparece novamente dentro do card de conteúdo. O CTA final e o sticky apontam para o Telegram informado, também sem exibir o URL.

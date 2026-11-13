@@ -16,7 +16,7 @@ function FinalCtaButton({ className = "" }: { className?: string }) {
 }
 
 function LiveButton() {
-  return <span className="cta-button hero-cta live-cta"><span>{copy.live}</span><small>{copy.meet}</small></span>;
+  return <span className="cta-button hero-cta live-cta">{copy.liveCta}</span>;
 }
 
 function App() {
@@ -59,6 +59,7 @@ function App() {
         <section className="hero-section">
           <h1>{renderAccent(copy.h1, ["OPERAX NEO"])}</h1>
           <h2>{renderAccent(copy.h2, ["300%", "OPERAX NEO"])}</h2>
+          <p className="live-title">{copy.live}</p>
           <a ref={heroCtaRef} className="hero-cta-anchor" href={MEET_LINK} target="_blank" rel="noopener noreferrer"><LiveButton /></a>
         </section>
 
@@ -98,7 +99,6 @@ function App() {
           <p className="body-copy">{copy.closing}</p>
           <p className="final-warning">{copy.ctaLine}</p>
           <FinalCtaButton />
-          <a className="support-url" href={FINAL_CTA_LINK} target="_blank" rel="noopener noreferrer">{copy.url}</a>
         </section>
       </div>
 
