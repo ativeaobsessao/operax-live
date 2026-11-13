@@ -26,7 +26,7 @@ npm install
 npm run build
 ```
 
-O build deve terminar com `vite build` sem erros.
+O build deve terminar com `vite build` sem erros. A Vercel deste projeto exige Node `26.x`; essa versão está definida em `package.json` e `.nvmrc`.
 
 ## CTAs desta versão
 
