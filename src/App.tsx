@@ -16,7 +16,7 @@ function FinalCtaButton({ className = "" }: { className?: string }) {
 }
 
 function LiveButton() {
-  return <span className="cta-button hero-cta live-cta">{copy.live}</span>;
+  return <span className="cta-button hero-cta live-cta"><span>{copy.live}</span><small>{copy.meet}</small></span>;
 }
 
 function App() {
@@ -98,7 +98,7 @@ function App() {
           <p className="body-copy">{copy.closing}</p>
           <p className="final-warning">{copy.ctaLine}</p>
           <FinalCtaButton />
-          <span className="support-url">{copy.url}</span>
+          <a className="support-url" href={FINAL_CTA_LINK} target="_blank" rel="noopener noreferrer">{copy.url}</a>
         </section>
       </div>
 

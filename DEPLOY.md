@@ -30,4 +30,4 @@ O build deve terminar com `vite build` sem erros.
 
 ## CTAs desta versão
 
-O único botão no topo é a live e aponta para o Google Meet real. A live não aparece novamente dentro do card de conteúdo. O CTA final e o sticky usam `{{LINK_CTA_FINAL}}` e `{{CTA_FINAL}}`; substitua esses placeholders pelo link e pelo texto aprovados antes de publicar. Nenhum link de amostra do Telegram foi mantido.
+O único botão no topo é a live e exibe o texto seguido do link real do Google Meet. A live não aparece novamente dentro do card de conteúdo. O CTA final e o sticky apontam para o Telegram informado pelo usuário.

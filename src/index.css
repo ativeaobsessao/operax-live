@@ -45,6 +45,8 @@ h1 { margin-bottom: 16px; font-size: clamp(30px, 8.1vw, 44px); line-height: .99;
 .cta-button:hover { filter: brightness(1.1); transform: translateY(-2px); }
 .cta-button:active { transform: translateY(0); }
 .hero-cta-anchor { display: block; text-decoration: none; }
+.live-cta { flex-direction: column; gap: 5px; min-height: 68px; }
+.live-cta small { font-size: 11px; line-height: 1.2; font-weight: 700; word-break: break-all; }
 .live-button { min-height: 48px; margin: -2px 0 20px; border: 1px solid rgba(67,255,99,.58); background: rgba(7,26,14,.72); color: var(--accent); font-size: 12px; word-break: break-all; }
 .hero-cta { animation: pulse 2.8s ease-in-out infinite; }
 .creative-frame { margin: 20px 0; padding: 8px; border: 1px solid rgba(105,208,127,.35); border-radius: 19px; background: #031009; box-shadow: 0 18px 45px #00000040; }
